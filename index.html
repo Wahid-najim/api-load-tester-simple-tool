@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoadRush69 - Poor Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js"></script>
+    <style>
+      body {
+        padding: 30px;
+        margin: 0px;
+        font-family: "Rubik", sans-serif;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gap-2 {
+        gap: 10px;
+      }
+      .input {
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .hidden {
+        display: none !important;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table th {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #000;
+      }
+      #tableBody tr td {
+        padding: 10px;
+        border-bottom: 1px solid #000;
+      }
+
+      .success {
+        color: green;
+      }
+      .error {
+        color: white;
+        background-color: red;
+      }
+      .warning {
+        background-color: rgb(255, 255, 34);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <h1 style="text-transform: uppercase">LoadRush69 - Poor Edition</h1>
+      <p>Built with JabaScrip</p>
+      <p>By a poor for some poor.</p>
+    </div>
+    <div class="flex gap-2">
+      <input
+        type="text"
+        class="input"
+        id="testingURl"
+        placeholder="Enter the testing url."
+        style="width: 100%"
+      />
+      <p style="white-space: nowrap">5 Request X </p>
+      <input
+        type="number"
+        class="input"
+        id="requestNumber"
+        placeholder="Request Set Number"
+      />
+      <input
+        type="number"
+        class="input"
+        id="delayTime"
+        placeholder="Request Delay Per Set"
+      />
+      <button
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 20px;
+          white-space: nowrap;
+        "
+        id="testButton"
+        onclick="makeRequest()"
+      >
+        Test Now
+      </button>
+    </div>
+    <div style="margin-top: 20px">
+      <table>
+        <thead>
+          <tr>
+            <th>Request Set</th>
+            <th>Request Time</th>
+            <th>Response Status</th>
+            <th>Response Time</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr id="defaultTr">
+            <td colspan="4" style="text-align: center">No Data</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
