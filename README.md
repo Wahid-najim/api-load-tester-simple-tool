@@ -7,7 +7,7 @@ LoadRush69 - Poor Edition is a simple web application built with JavaScript for 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/loadrush69-poor-edition.git
+   git clone https://github.com/a4arpon/api-load-tester-simple-tool.git
    ```
 
 2. Open the `index.html` file in your web browser or deploy the project on a web server.
